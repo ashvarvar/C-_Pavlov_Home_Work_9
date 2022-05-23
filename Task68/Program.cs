@@ -12,7 +12,7 @@ int Ackermann(int m, int n)
     }
     else
     {
-        return Ackermann(m - 1, Ack(m, n - 1));
+        return Ackermann(m - 1, Ackermann(m, n - 1));
     }
 }
 Console.WriteLine(Ackermann(2, 3));
